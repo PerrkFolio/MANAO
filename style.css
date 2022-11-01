@@ -1,0 +1,132 @@
+/*
+Theme Name: Basic дочерняя тема
+Template: basic
+
+Author: Dendrofen
+Author URI: https://dendrofen.com
+Version: 1.0
+*/
+
+/* global */
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-3 {
+  margin-bottom: 30px;
+}
+.center {
+  text-align: center;
+}
+.d-none {
+  display: none;
+}
+
+/* auth page */
+.main__auth {
+  display: flex;
+  justify-content: center;
+}
+
+/* menu */
+body.logged-in nav .login-page-button,
+body nav .profile-page-button {
+  display: none;
+}
+body.logged-in nav .profile-page-button {
+  display: inline-block;
+}
+
+.items-catalog {
+  display: flex;
+  flex-direction: row;
+}
+.items-catalog .items__block {
+  flex: 1;
+}
+
+.filters__block {
+  flex: 0.3;
+  margin-right: 20px;
+}
+
+.filters__block .filter__row {
+  margin-bottom: 30px;
+}
+.filters__block .filter__row .filter__row-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filters__block .filter__row .filter__row-inner input {
+  width: 60px;
+}
+
+.filters__block .filter__title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.filter__item {
+  display: block;
+}
+
+.preloader {
+  text-align: center;
+}
+
+.pagination .nav-links {
+  margin: auto;
+}
+
+.dynamic-menu-item {
+  display: inline-block;
+}
+.dynamic-menu-item img{
+  height: 20px;
+}
+
+.edit_profile, .login_profile {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.edit_profile {
+  width: 25%;
+}
+.login_profile {
+  width: 25%;
+}
+.input_login, .input_pass {
+  display: inline-block;
+  width: 65%;
+}
+
+/* payments */
+#customer_details {
+  display: none;
+}
+.woocommerce-form-coupon-toggle{
+  display: none;
+}
+.woocommerce-notices-wrapper{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .items-catalog {
+    flex-direction: column;
+  }
+  .filters__block {
+    margin: 0px;
+  }
+  body.logged-in nav .profile-page-button {
+    display: block;
+  }
+  .edit_profile, .login_profile {
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+  }
+  .input_login, .input_pass {
+    display: block;
+    width: 90%;
+  }
+}
